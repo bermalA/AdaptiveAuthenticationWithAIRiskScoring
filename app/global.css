@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --clr-glass: rgba(255, 255, 255, 0.3);
+}
+
+.btn {
+  @apply font-bold px-5 py-1 rounded border;
+}
+
+.btn-teal {
+  @apply bg-teal-600 text-white hover:bg-teal-800
+   border-teal-800 transition duration-300;
+}
+
+.card {
+  @apply flex flex-col justify-center items-center 
+  gap-3 rounded-xl p-10;
+}
+
+.glass {
+  @apply bg-[var(--clr-glass)] backdrop-blur-md 
+  border border-stone-900/15 shadow-lg;
+}
+
+.input{
+    @apply border p-2 rounded-md border-stone-400/45
+}
+
+.row{
+  @apply flex flex-1 gap-2 m-5;
+}
+
+.board{
+  @apply bg-[var(--clr-glass)] backdrop-blur-md 
+   border border-slate-900/45 flex flex-1 
+  rounded-lg  items-center justify-center;
+}
