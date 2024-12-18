@@ -48,16 +48,11 @@ This project focuses on dynamically activating or deactivating Multi-Factor Auth
 ### Steps
 
 1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/your-repo/adaptive-authentication.git
-   cd adaptive-authentication
+   ```
+   git clone https://github.com/bermalA/AdaptiveAuthenticationWithAIRiskScoring.git
    ```
 
-2. **Frontend Setup**:
-   - Navigate to the `frontend` directory:
-     ```bash
-     cd frontend
-     ```
+2. **Library Installation**
    - Install dependencies including TensorFlow.js:
      ```bash
      npm install
@@ -77,8 +72,8 @@ This project focuses on dynamically activating or deactivating Multi-Factor Auth
 2. Log in with valid credentials.
 3. The model evaluates login details and displays:
    - **Low Risk**: Direct access to the dashboard.
-   - **Medium Risk**: Prompt for additional verification.
-   - **High Risk**: MFA triggers stronger security measures.
+   - **Medium Risk**: User alerted.
+   - **High Risk**: User alerted and login denied.
 
 ---
 
